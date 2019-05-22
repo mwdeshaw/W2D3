@@ -88,5 +88,24 @@ describe "#stock_picker" do
 
 end
 
+describe TowersOfHanoi do
+  subject(:game) { TowersOfHanoi.new(3) }
+
+  describe "#initialize" do
+    it "should accept a tower height (Integer) as an argument" do
+      expect(game.height).to be_a(Integer)
+    end
+
+    it "towers should always be a 2-d array of length 3" do
+      expect(game.towers.length).to eq(3)
+    end
+
+    it "game_over should be set to false" do
+      expect(game.game_over).to be false
+    end
+  end
+
+end 
+
 
 

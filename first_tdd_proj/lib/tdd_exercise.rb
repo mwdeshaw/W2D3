@@ -56,5 +56,16 @@ def stock_picker(arr)
       end
     end
     pair
-    
+
+end
+
+class TowersOfHanoi
+  attr_reader :height, :towers, :game_over
+
+  def initialize(height = 3)
+    @height = height
+    @towers = Array.new(3) { Array.new }
+    @game_over = false
+  end
+
 end

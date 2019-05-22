@@ -1,0 +1,34 @@
+selector {
+  property: body;
+}
+
+body {
+  background-color:lightgreen;
+}
+
+p {
+  font-family: Arial, sans-serif;
+}
+
+h1 { 
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+ul li a {
+    list-style-type: square;
+    color: inherit      
+}
+
+ol li a {
+    list-style-type: circle;
+}
+
+img {
+    width: 100px;
+}
+
+

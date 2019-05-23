@@ -1,4 +1,4 @@
-require_relative "card.rb"
+require_relative "card"
 
 class Deck
   def initialize
@@ -8,7 +8,11 @@ class Deck
   end
 
   def show_cards
-    @cards.dup
+    cards.dup
+  end
+
+  def draw
+    cards.shift
   end
 
   private
